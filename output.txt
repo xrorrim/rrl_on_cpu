@@ -1,8 +1,14 @@
-/Users/xuruyi/miniconda3/envs/rrl/lib/python3.10/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but OneHotEncoder was fitted with feature names
+/Users/xuruyi/miniconda3/envs/try/lib/python3.10/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but OneHotEncoder was fitted with feature names
   warnings.warn(
 /Users/xuruyi/Desktop/rrl/rrl/utils.py:99: FutureWarning: The behavior of array concatenation with empty entries is deprecated. In a future version, this will no longer exclude empty items when determining the result dtype. To retain the old behavior, exclude the empty entries before the concat operation.
   X_df = pd.concat([pd.DataFrame(discrete_data.toarray()), continuous_data], axis=1)
-/Users/xuruyi/miniconda3/envs/rrl/lib/python3.10/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but OneHotEncoder was fitted with feature names
+/Users/xuruyi/miniconda3/envs/try/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/xuruyi/miniconda3/envs/try/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/xuruyi/miniconda3/envs/try/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/Users/xuruyi/miniconda3/envs/try/lib/python3.10/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but OneHotEncoder was fitted with feature names
   warnings.warn(
 /Users/xuruyi/Desktop/rrl/rrl/utils.py:99: FutureWarning: The behavior of array concatenation with empty entries is deprecated. In a future version, this will no longer exclude empty items when determining the result dtype. To retain the old behavior, exclude the empty entries before the concat operation.
   X_df = pd.concat([pd.DataFrame(discrete_data.toarray()), continuous_data], axis=1)
