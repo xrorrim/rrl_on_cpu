@@ -1,0 +1,8 @@
+/Users/xuruyi/miniconda3/envs/rrl/lib/python3.10/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but OneHotEncoder was fitted with feature names
+  warnings.warn(
+/Users/xuruyi/Desktop/rrl/rrl/utils.py:99: FutureWarning: The behavior of array concatenation with empty entries is deprecated. In a future version, this will no longer exclude empty items when determining the result dtype. To retain the old behavior, exclude the empty entries before the concat operation.
+  X_df = pd.concat([pd.DataFrame(discrete_data.toarray()), continuous_data], axis=1)
+/Users/xuruyi/miniconda3/envs/rrl/lib/python3.10/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but OneHotEncoder was fitted with feature names
+  warnings.warn(
+/Users/xuruyi/Desktop/rrl/rrl/utils.py:99: FutureWarning: The behavior of array concatenation with empty entries is deprecated. In a future version, this will no longer exclude empty items when determining the result dtype. To retain the old behavior, exclude the empty entries before the concat operation.
+  X_df = pd.concat([pd.DataFrame(discrete_data.toarray()), continuous_data], axis=1)
