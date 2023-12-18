@@ -44,8 +44,15 @@ parser.add_argument('--print_rule', action="store_true",
 parser.add_argument('-s', '--structure', type=str, default='5@64',
                     help='Set the number of nodes in the binarization layer and logical layers. '
                          'E.g., 10@64, 10@64@32@16.')
+# 定义一个参数字符串
+args_str = ' -d tic-tac-toe -bs 32 -s 1@16 -e401 -lrde 200 -lr 0.002 -ki 0 -i 0 -wd 0.0001 --print_rule'
+# 分割字符串为参数列表
+args_list = args_str.split()
 
-rrl_args = parser.parse_args()
+# 使用 parse_args 解析这个列表
+rrl_args = parser.parse_args(args_list)
+
+print(rrl_args)
 rrl_args.folder_name = '{}_e{}_bs{}_lr{}_lrdr{}_lrde{}_wd{}_ki{}_rc{}_useNOT{}_saveBest{}_useNLAF{}_estimatedGrad{}_useSkip{}_alpha{}_beta{}_gamma{}_temp{}'.format(
     rrl_args.data_set, rrl_args.epoch, rrl_args.batch_size, rrl_args.learning_rate, rrl_args.lr_decay_rate,
     rrl_args.lr_decay_epoch, rrl_args.weight_decay, rrl_args.ith_kfold, rrl_args.round_count, rrl_args.use_not,

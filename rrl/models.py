@@ -67,6 +67,9 @@ class Net(nn.Module):
         return x
     
     def bi_forward(self, x, count=False):
+        # print("input ",x)
+        # print(x.shape)
+        # print(type(x))
         for layer in self.layer_list:
             if layer.conn.skip_from_layer is not None:
                 x = torch.cat((x, layer.conn.skip_from_layer.x_res), dim=1)
@@ -77,6 +80,10 @@ class Net(nn.Module):
             if count and layer.layer_type != 'linear':
                 layer.node_activation_cnt += torch.sum(x, dim=0)
                 layer.forward_tot += x.shape[0]
+
+        # print("result ",x)
+        # print(x.shape)
+
         return x
 
 
